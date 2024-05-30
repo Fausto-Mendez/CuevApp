@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Administrador</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito:200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/AbarrotesCuevas/CSS/estilos.css">
+    <script src="/AbarrotesCuevas/JAVASCRIPT/menuadmin.js"></script>
+</head>
+<body>
+    <header class="header-centrado">
+        <div class="cuevapp-title-center">CuevApp</div>
+        <a href="#" id="username-link" class="username-link">Username</a>
+    </header>
+    <div class="container-bienvenida">
+        <label id="username-label" for="username">Bienvenido</label>
+        <br>
+        <input type="text" id="username" name="username" readonly>
+    </div>
+    <div class="container">
+        <img src="/AbarrotesCuevas/PNG/noimage.png" alt="Imagen de perfil" class="imagen-circular">
+    </div>
+    <br><br>
+    <div class="main-admin-container">
+        <div class="left-admin-container">
+            <h2>Que deseas hacer?</h2>
+            <div class="button-admin-container">
+                <button class="action-admin-button-usuario" id="button1">
+                    <span class="icon">👤</span>
+                    Registrar Usuario
+                </button>
+                <button class="action-admin-button-sucursal" id="button2">
+                    <span class="icon">🏪</span>
+                    Registrar Sucursal
+                </button>
+                <button class="action-admin-button-producto" id="button3">
+                    <span class="icon">📦</span>
+                    Registrar Producto
+                </button>
+            </div>
+        </div>
+        <div class="right-admin-container" id="fragment-container">
+                
+        </div>
+    </div>
+
+     <!-- Fragmentos ocultos -->
+     
+     <div id="fragment1" class="fragment-admin" style="display: none;">
+        <h2>Registrar Usuario</h2>
+        <form>
+            <label for="nombre">Nombre(s)</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno">
+            <br>
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno">
+            <br>
+            <label for="telefono">Telefono</label>
+            <input type="number" id="telefono" name="telefono">
+            <br><br>
+            <label for="cargo">Cargo</label>
+            <select id="cargo" name="cargo">
+
+            </select>
+            <br><br>
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" id="usuario" name="usuario">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="text" id="password" name="password">
+            <br>
+            <label for="sucursal">Sucursal</label>
+            <select id="sucursal" name="sucursal">
+
+            </select>
+            <br><br>
+            <label for="dob">Fecha de Nacimiento</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <button id="guardar-usuario-button" class="button button-primary">Guardar</button>
+            <button id="cancelar-button" class="button button-cancelar">Cancelar</button>
+        </form>
+    </div>
+     
+    <div id="fragment2" class="fragment-admin" style="display: none;">
+        <h2>Registrar Sucursal</h2>
+        <form>
+            <label for="direccionCompletaSucursal">Dirección completa</label>
+            <input type="text" id="direccionCompletaSucursal" name="direccionCompletaSucursal">
+            <br>
+            <label for="latitud">Latitud</label>
+            <input type="number" id="latitud" name="latitud">
+            <br><br>
+            <label for="longitud">Latitud</label>
+            <input type="number" id="longitud" name="longitud">
+            <br><br>
+            <label for="nombreComercial">Nombre Comercial</label>
+            <input type="text" id="nombreComercial" name="nombreComercial">
+            <br>
+            <label> Horario de Servicio</label>
+            <br><br>
+            <label for="horaApertura">Hora de Apertura</label>
+            <input type="time" id="horaApertura" name="horaApertura">
+            <br><br>
+            <label for="horaCierre">Hora de Cierre</label>
+            <input type="time" id="horaCierre" name="horaCierre">
+            <br><br>
+            <button id="guardar-usuario-button" class="button button-primary">Guardar</button>
+            <button id="cancelar-button" class="button button-cancelar">Cancelar</button>
+        </form>
+    </div>
+
+    <div id="fragment3" class="fragment-admin" style="display: none;">
+        <h2>Registrar Producto</h2>
+        <form>
+            <label for="nombreProducto">Nombre del Producto</label>
+            <input type="text" id="nombreProducto" name="nombreProducto">
+            <br>
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion">
+            <br>
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+
+            </select>
+            <br><br>
+            <label for="cantidad">Cantidad de Productos</label>
+            <input type="number" id="cantidad" name="cantidad">
+            <br><br>
+            <label for="caducidad">Fecha de Caducidad</label>
+            <input type="date" id="caducidad" name="caducidad">
+            <br>
+            <label for="imagenProducto">Subir Imagen del Producto</label>
+            <input type="file" id="imagenProducto" name="imagenProducto">
+            <br><br><br>
+            <button id="guardar-usuario-button" class="button button-primary">Guardar</button>
+            <button id="cancelar-button" class="button button-cancelar">Cancelar</button>
+        </form>
+    </div>
+
+</body>
+</html>

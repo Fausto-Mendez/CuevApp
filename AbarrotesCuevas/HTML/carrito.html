@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Tu carrito</h1>
+        <div class="location">
+            <img src="../PNG/ubicacion.png" alt="Ubicación">
+            <span id="user-location">Obteniendo ubicación...</span>
+        </div>
+    </header>
+    <div class="cart-container">
+        <div id="empty-cart" class="empty-cart">
+            <img src="../PNG/carrito.png" alt="Carrito Vacío">
+            <p>Aún no tienes ningún producto en tu carrito</p>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div id="cart-total" class="cart-total"></div>
+    </div>
+    <div class="cart-buttons">
+        <button id="go-shopping" class="btnCart" style="display: none;">Ir a comprar</button>
+        <button id="pay-now" class="btnCart" style="display: none;">Pagar</button>
+    </div>
+  
+    <script src="../JAVASCRIPT/scripts.js"></script>
+</body>
+</html>
+
+
+

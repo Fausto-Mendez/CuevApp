@@ -1,0 +1,652 @@
+/* Estilos CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.background-image {
+  background-image: url("../PNG/index1.png");
+  background-size: cover;
+  background-position: 43%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+main{
+  background: #25B354;
+  width: 100%; 
+  min-height: 100vh;
+}
+
+iframe{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-bar {
+  background: #fff;
+  height: 1.5cm;
+  display: flex;
+  align-items: center;
+  padding: 0 1cm;
+  z-index: 3;
+}
+
+.menu-icon {
+  background: url('../PNG/menu-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin: center;
+}
+
+.location-icon {
+  background: url('../PNG/ubicacion.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin: center;
+}
+
+.cart-icon {
+  background: url('../PNG/carrito.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin: center;
+}
+
+.menu-icon:hover {
+  background-color: #25B354;
+}
+
+.cuevapp-title {
+  color: #25B354;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-left: 1rem;
+}
+
+.cuevapp-title-center {
+  text-align: center;
+  color: #25B354;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin: auto;
+}
+
+.username-link {
+  color: #25B354;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.cuevapp-header {
+  display: flex;
+  justify-content: center;
+  color: #25B354;
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  margin-left: 2rem;
+}
+
+h1 {
+  font-family: 'Nunito';
+  size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+h6{
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+  color: black;
+  text-align: left; 
+  padding: 3rem;
+  padding-top: 15rem;
+  margin: 0%;
+}
+
+h2 {
+  font-family: 'Nunito';
+  size: 0.7rem;
+  color: black;
+  text-align: left; 
+  margin-left: 2rem;
+}
+
+.separator1 {
+  margin: 0 1cm;
+  border-left: 1px solid #000;
+  height: 50%;
+}
+
+.separator2 {
+  margin: 0 1cm;
+  border-left: 1px solid #000;
+  height: 50%;
+}
+
+.separator3 {
+  margin: 0 1cm;
+  border-left: 1px solid #000;
+  height: 50%;
+}
+
+.separator4 {
+  margin: 0 1cm;
+  border-left: 1px solid #000;
+  height: 50%;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #ECECEC;
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 0.8cm;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  color: #AEAEAE;
+  font-size: 16px;
+  height: 0.8cm;
+}
+
+.search-bar input::placeholder {
+  color: #929292;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.search-icon:hover {
+  color: #25B354;
+}
+
+.login-text {
+  color: #25B354;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: center;
+}
+
+.cart-icon {
+  cursor: pointer;
+  margin: center;
+}
+
+buttonMain {
+  background-color: #2D2D2D;
+  color: #fff;
+  border: none;
+  margin-left: 3rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.location-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.location-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #25B354;
+}
+
+.back-button {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
+  margin-right: 20px;
+}
+
+.header-registro {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-simple {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-centrado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos para el formulario */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0 auto; 
+  width: 80%; 
+  max-width: 300px; 
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+  text-align: center;
+  color: #000; 
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type="text2"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 16px;
+  transform: scale(2);
+}
+
+/* Pedidos de Repartidor*/
+.pedidos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* Pendiente: diseñar el contenedor */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-circular{
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+.container-bienvenida{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+#username-label {
+  font-size: 3rem;
+  font-family: 'Nunito';
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+
+#username {
+  font-size: 3rem;
+  font-family: 'Nunito';
+  font-weight: bold;
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #25B354;
+}
+
+
+#registrarse-button {
+  margin-top: 20px; /* Espacio entre el formulario y el botón */
+}
+
+.button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #31b057;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #31b057;
+  font-family: arial;
+  font-style: bold;
+  cursor: pointer;
+}
+
+.location img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.button-primary {
+  background-color: #31b057;
+  color: white;
+}
+
+.button-secondary {
+  background-color: white;
+  color: #31b057;
+}
+
+.button-cancelar {
+  background-color: white;
+  color: #F21E1E;
+}
+
+/* Estilos para menú de admin */
+
+.main-admin-container {
+  display: flex;
+  flex-grow: 1;
+  height: calc(100vh - 60px);
+}
+
+.left-admin-container {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.left-admin-container h2 {
+  font-family: 'Nunito Bold', sans-serif;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-admin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.action-admin-button-usuario {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #F21E1E;
+  color: white;
+  width: 100%;
+  height: 5rem;
+}
+
+.action-admin-button-usuario:hover {
+  background-color: #e45151;
+}
+
+.action-admin-button-sucursal {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #25B354;
+  color: white;
+  height: 5rem;
+}
+
+.action-admin-button-sucursal:hover {
+  background-color: #4fdb7d;
+}
+
+.action-admin-button-producto {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4368C5;
+  color: white;
+  height: 5rem;
+}
+
+.action-admin-button-producto:hover {
+  background-color: #6482ce;
+}
+
+.right-admin-container {
+  background-color: #ECECEC;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.fragment-admin{
+  font-family: 'Nunito', sans-serif;
+}
+
+.fragment-admin h3 {
+  text-align: center;
+  color: black;
+}
+
+.fragment-admin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+.fragment-admin label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+/* Estilos responsivos */
+@media only screen and (min-width: 601px) {
+  .menu-bar {
+    height: 1cm;
+    padding: 0.3cm 0.3cm; 
+  }
+  .search-bar {
+    flex-grow: 1;
+    justify-content: space-between; 
+  }
+  .search-bar input {
+    width: 80%; 
+  }
+  .search-text {
+    display: none; 
+  }
+  .separator1,.separator3,.separator2,.separator4{
+    margin: 0.5cm;
+  }
+  .cart-icon{
+    size: auto;
+  }
+  .login-text, .location-button, .location-label {
+    display: flex;
+  }
+  
+}
+
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+  .menu-bar {
+    height: 1cm;
+    padding: 0.3cm 0.3cm; 
+  }
+  .cuevapp-title{
+    font-size: 15px;
+  }
+  .search-bar {
+    flex-grow: 1;
+    justify-content: space-between; 
+    width: 3cm;
+    height: 0.8cm;
+  }
+  .search-bar input {
+    width: 80%; 
+  }
+  .search-text {
+    display: none; 
+  }
+  .separator1,.separator3{
+    margin: 0.2cm;
+    border-left: 1px solid transparent;
+  }
+  .cart-icon{
+    size: auto;
+  }
+  .separator2, .login-text, .separator4, .boton-ubicacion, .location-label {
+    display: none;
+  }
+
+  .left-admin-container {
+    width: 100%;
+    box-shadow: none; 
+    padding: 20px 10px; 
+  }
+
+  .right-admin-container {
+    display: none; 
+  }
+
+  .left-admin-container h2 {
+    font-size: 1.5rem; 
+  }
+
+}
+
+/* Estilos responsivos */
+@media only screen and (min-width: 992px) {
+  .menu-bar {
+    height: 1cm;
+    padding: 0.3cm 0.3cm; 
+  }
+  .search-bar {
+    flex-grow: 1;
+    justify-content: space-between; 
+  }
+  .search-bar input {
+    width: 80%; 
+  }
+  .search-text {
+    display: none; 
+  }
+  .separator1,.separator3,.separator2,.separator4{
+    margin: 1cm;
+  }
+  .cart-icon{
+    size: auto;
+  }
+  .login-text, .location-button, .location-label {
+    display: flex;
+  }
+}
+
+
+
+
+

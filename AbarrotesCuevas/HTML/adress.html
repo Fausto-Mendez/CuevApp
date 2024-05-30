@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de dirección</title>
+    <link rel="stylesheet" href="../CSS/adress.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOeK0oBJmj1Hiw512ozDVDDDJ3HH39XOY&libraries=places"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Agrega o escoge una dirección</h1>
+        <div class="search-bar">
+            <input type="text" id="address-input" placeholder="Escribe la dirección de entrega...">
+            <img src="../PNG/ubicacion.png" alt="Ubicación">
+        </div>
+        <div id="address-suggestions" class="suggestions"></div>
+        <div id="address-verification" style="display: none;">
+            <div id="map" style="height: 400px;"></div>
+            <button id="confirm-address">Confirmar dirección</button>
+        </div>
+        <div id="saved-addresses">
+            <h2>Direcciones guardadas</h2>
+            <p id="no-addresses-msg">No hay direcciones guardadas.</p>
+            <!-- Direcciones guardadas se cargarán aquí -->
+        </div>
+        <button id="use-current-location">
+            <img src="../PNG/ubicacion.png" alt="Ubicación">
+            <span>Usar mi ubicación actual</span>
+        </button>
+    </div>
+
+    <script src="../JAVASCRIPT/adress.js"></script>
+</body>
+</html>
+
+

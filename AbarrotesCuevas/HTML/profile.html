@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Perfil</title>
+    <link rel="stylesheet" href="../CSS/adress.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1profile">Gestión de Perfil</h1>
+        <div class="profile-section">
+            <img src="" alt="Foto de Perfil" class="imageprofile" id="profile-picture">
+            <form id="profile-form">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit" class="update-button" id="update-button" style="display: none;">Actualizar Cambios</button>
+            </form>
+            <form id="password-form" style="display: none;">
+                <label for="new-password">Nueva contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Confirmar contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit" class="password-button" id="password-button">Cambiar Contraseña</button>
+            </form>
+            <button type="button" id="show-password-form">Mostrar Contraseña</button>
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/profile.js"></script>
+</body>
+</html>
+
+

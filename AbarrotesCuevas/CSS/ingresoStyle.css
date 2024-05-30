@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.cuevapp-title {
+    color: #25B354;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-left: 1rem;
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.back-button {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    margin-right: 20px;
+}
+
+.app-title {
+    font-size: 24px;
+    color: #31b057;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container1 {
+    width: 6rem;
+    height: max-content;
+    flex: 1;
+    margin-left: 7rem;
+    margin-top: 8rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #31b057;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-primary {
+    background-color: #31b057;
+    color: white;
+}
+
+.button-secondary {
+    background-color: white;
+    color: #31b057;
+}
+
+.icon {
+    display: inline-block;
+}
+
+/* Estilos responsivos */
+
+@media only screen and (min-width: 601px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container1{
+        margin-left: 13rem;
+        margin-top: 5rem;
+    }
+
+    .form-container {
+        padding: 40px;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container1{
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: 2rem;
+        flex-direction:row;
+    }
+
+    .image-container1{
+        margin-left: 15rem;
+        margin-top: 10rem;
+    }
+
+    .form-container {
+        padding: 40px;
+        margin-right: 20px;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
